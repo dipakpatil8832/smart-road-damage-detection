@@ -118,6 +118,21 @@ h1, h2, h3 {
     margin-top: 4px;
 }
 
+/* Mobile friendly tweaks */
+@media (max-width: 640px) {
+    .metric-card { padding: 16px !important; }
+    .metric-card .value { font-size: 1.35rem !important; }
+    .metric-card .label { font-size: 0.7rem !important; }
+
+    /* Reduce font sizes on headings */
+    h1 { font-size: 1.4rem !important; }
+    h2 { font-size: 1.15rem !important; }
+
+    /* Make sidebar content fit better */
+    [data-testid="stSidebar"] { padding-top: 0px !important; }
+}
+
+
 /* Form styling */
 .stTextInput input, .stNumberInput input, .stSelectbox select {
     background: #1a1a2e !important;
